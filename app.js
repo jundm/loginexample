@@ -2,18 +2,14 @@ const express = require('express');
 const app = express();
 const port = 5000;
 
+// 라우팅
+const home = require("./routes/home");
+
 // 앱 세팅
 app.set("views", "./views");
 app.set("view engine", "ejs");
 
-app.get("/", (req, res) => {
-    res.render("home")
-});
-
-app.get('/login', (req, res) => {
-    res.render("home/login")
-});
-
+app.use('/', home); // use는 미들웨어를 등록해주는 메서드.
 
 app.listen(port, function () {
     console.log(`
