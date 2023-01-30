@@ -1,1 +1,19 @@
-{}
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-jun:jundm/loginexample.git"
+  },
+  "author": "jun",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
