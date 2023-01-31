@@ -11,12 +11,11 @@ function login() {
         id: id.value,
         password: password.value
     };
-    // API가 없는 상태
     fetch("/login", {
         method: "POST",
-        header: {
-            "Content-Type": "application/json"
+        headers: {
+            "Content-Type": "application/json",
         },
-        body: JSON.stringify(req)
+        body: JSON.stringify(req),
     });
 }
