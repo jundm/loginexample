@@ -8,7 +8,15 @@ loginBtn.addEventListener("click", login);
 
 function login() {
     const req = {
-        id:id.value, password:password.value
+        id: id.value,
+        password: password.value
     };
-    console.log(req);
+    // API가 없는 상태
+    fetch("/login", {
+        method: "POST",
+        header: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(req)
+    });
 }
