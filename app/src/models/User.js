@@ -6,7 +6,7 @@ class User {
         this.body = body;
     }
 
-    login() {
+    async login() {
         const client = this.body;
         const {id, password} = UserStorage.getUserInfo(client.id);
         if (id) {
