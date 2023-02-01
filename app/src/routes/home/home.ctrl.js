@@ -21,7 +21,9 @@ const process = {
         return res.json(response);
     },
     register:(req,res)=>{
-      console.log('레지스터')
+        const user = new User(req.body);
+        const response = user.register();
+        return res.json(response);
     }
 };
 

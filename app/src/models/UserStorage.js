@@ -30,6 +30,10 @@ class UserStorage {
         }, {});
         return userInfo;
     }
+
+    static save(userInfo){
+
+    }
 }
 
 module.exports = UserStorage;
